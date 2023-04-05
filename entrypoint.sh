@@ -1,5 +1,6 @@
 #!/bin/bash -le
 
+cd /github/workspace
 for d in $@; do
     pushd $d
     sphinx-build docs docs/_out -b html
